@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+     h1:hover{
+         color: blue;
+         background-color: green;
+         font-weight: bold;
+     }
+
+     .middle-person:focus{
+         color: red;
+         font-weight: 700;
+     }
+
+     a:visited{
+         color: red;
+     }
+
+     li:first-child{
+         color: blue;
+     }
+     li:last-child{
+         background-color: green;
+     }
+
+     li:nth-child(2n){
+         color: blueviolet;
+     }
+
+     li:nth-child(2n+1){
+         background-color: aquamarine;
+     }
+
+     h2::before{
+         content: 'Hello ';
+     }
+
+     h2::after{
+         content: ' Gello';
+         background-color: darkkhaki;
+         font-size: 40px;
+     }
+
+     .special::after{
+         content: ' Special';
+     }
+    </style>
+</head>
+<body>
+    <h1>This is normal</h1>
+    <input type="text">
+    <input class="middle-person" type="text">
+    <input type="text">
+    <br>
+    <a href="https://www.google.com/">google a jao</a>
+    <a class="" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjOvbqgxdHxAhVPtpYKHQtYD-EYABABGgJ0bA&ae=2&ohost=www.google.com&cid=CAESQeD2iMVgLSlNQ9y73yTDOdwuqXzqAKeQNlUTiXSglpF-8t9rI5dWPPN1YtDZB2grIUQry703yEkKARzLR0dAkEmO&sig=AOD64_3Z083vkoih7VHE7Xfjo9UrUxdP5A&q&nis=1&adurl&ved=2ahUKEwiqs7KgxdHxAhULOSsKHch3DUIQ0Qx6BAgEEAE">Not Visited</a>
+    <a href="https://web.programming-hero.com/">programming-hero te jao</a>
+
+    <h2>middle header size -1</h2>
+    <h2 class="special">middle header size -2</h2>
+    <h2>middle header size -3</h2>
+    <h2 class="special">middle header size -4</h2>
+    <h2>middle header size -5</h2>
+    <h2 class="special">middle header size -6</h2>
+
+    <br>
+    <ul>
+        <li>Alia</li>
+        <li>dali</li>
+        <li>mafia</li>
+        <li>kabila</li>
+        <li>babul</li>
+        <li>kabul</li>
+        <li>maria</li>
+        <li>faria</li>
+    </ul>
+</body>
+</html>
